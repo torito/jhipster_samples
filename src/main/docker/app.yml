@@ -1,0 +1,15 @@
+version: '2'
+services:
+    jhipster_tst-app:
+        image: jhipster_tst
+        external_links:
+            - jhipster_tst-mysql:mysql
+        environment:
+            - SPRING_PROFILES_ACTIVE=prod
+            - SPRING_DATASOURCE_URL=jdbc:mysql://mysql:3306/jhipster_tst?useUnicode=true&characterEncoding=utf8&useSSL=false
+        ports:
+            - 8080:8080
+    jhipster_tst-mysql:
+        extends:
+            file: mysql.yml
+            service: jhipster_tst-mysql
