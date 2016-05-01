@@ -1,3 +1,4 @@
+[![Build Status](https://semaphoreci.com/api/v1/torito/jhipster_samples/branches/master/badge.svg)](https://semaphoreci.com/torito/jhipster_samples)
 # jhipster_tst
 
 This application was generated using JHipster, you can find documentation and help at [https://jhipster.github.io](https://jhipster.github.io).
